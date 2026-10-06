@@ -38,3 +38,11 @@ Clicar em Resenha
 	Aparece resenhas sobre filmes que o usuário assistiu junto de um botão de Adicionar Resenha.
 Clicar em Adicionar Resenha	
 	Abrir uma página que permite o usuário de expor sua opinião sobre um filme.
+	
+##### Regras Globais
+- Use sempre PDO para conexão e queries no MySQL para evitar SQL Injections
+- Mantenha o código limpo e comente apenas logicas complexas.
+- Separe os arquivos de forma lógica: um arquivo para conexão com a base (bd.php) e scripts de backend isolados e views em HTML5/PHP, nunca faça o sistema como um monolito, deixe sempre separados todas as regras para facilitar os futuros upgrades.
+ - Estilize as telas em Tailwind de forma responsiva priorizando o MobileFrist.
+ - Retorne sempre as mensagens de erros de forma claras na interface para o usuário (TOAST)
+ - sempre trate as mensagens de caixa de mensagens nativas do navegador em um MODAL
